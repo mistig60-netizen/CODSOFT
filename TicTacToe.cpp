@@ -87,7 +87,7 @@ int main() {
         currentPlayer = 'X';
         bool gameOver = false;
 
-        cout << "🎮 Welcome to Tic-Tac-Toe!\n";
+        cout << " Welcome to Tic-Tac-Toe!\n";
         displayBoard();
 
         while (!gameOver) {
@@ -95,10 +95,10 @@ int main() {
             displayBoard();
 
             if (isWin()) {
-                cout << "🏆 Player " << currentPlayer << " wins!\n";
+                cout << " Player " << currentPlayer << " wins!\n";
                 gameOver = true;
             } else if (isDraw()) {
-                cout << "🤝 It's a draw!\n";
+                cout << " It's a draw!\n";
                 gameOver = true;
             } else {
                 switchPlayer();
@@ -112,4 +112,5 @@ int main() {
 
     cout << "Thanks for playing!\n";
     return 0;
+
 }
